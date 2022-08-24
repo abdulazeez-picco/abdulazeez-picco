@@ -1,6 +1,6 @@
-name: table_calendar
+name: scrollable_bottomsheet_batepicker
 description: Combined Datepicker of horizontal datepicker calendar and bottomsheet date picker.
-version: 0.0.1
+version: 0.0.5
 homepage: https://github.com/karthick-picco/Scrollable_Bottomsheet_Date_Picker
 
 environment:
@@ -14,10 +14,11 @@ dependencies:
   intl: ^0.17.0
   simple_gesture_detector: ^0.2.0
   adaptive_date_picker: ^0.0.5
+  jiffy: ^5.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  jiffy: ^5.0.0
+  
 
 flutter:
   assets:

@@ -137,9 +137,9 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
       widget.availableGestures == AvailableGestures.all ||
       widget.availableGestures == AvailableGestures.horizontalSwipe;
 
-  bool get _canScrollVertically =>
-      widget.availableGestures == AvailableGestures.all ||
-      widget.availableGestures == AvailableGestures.verticalSwipe;
+  // bool get _canScrollVertically =>
+  //     widget.availableGestures == AvailableGestures.all ||
+  //     widget.availableGestures == AvailableGestures.verticalSwipe;
 
   void _updatePage({bool shouldAnimate = false}) {
     final currentIndex = _calculateFocusedPage(

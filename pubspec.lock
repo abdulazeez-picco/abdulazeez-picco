@@ -75,7 +75,7 @@ packages:
     source: hosted
     version: "0.17.0"
   jiffy:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: jiffy
       url: "https://pub.dartlang.org"
