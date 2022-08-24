@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:simple_gesture_detector/simple_gesture_detector.dart';
 import 'package:adaptive_date_picker/adaptive_date_picker.dart';
-import 'package:scrollable_bottomsheet_batepicker/table_calendar.dart';
+import 'package:scrollable_bottomsheet_batepicker/scrollable_bottomsheet_batepicker.dart';
 import 'widgets/calendar_header.dart';
 import 'widgets/cell_content.dart';
 import "package:jiffy/jiffy.dart";

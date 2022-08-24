@@ -1,3 +1,3 @@
-## [0.0.1] - Initial release
+## [0.0.5] - Initial release
 
 * Horizontal scrollable calendar and bottomsheet date picker.

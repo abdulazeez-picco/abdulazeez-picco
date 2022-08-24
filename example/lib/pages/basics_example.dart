@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scrollable_bottomsheet_batepicker/table_calendar.dart';
+import 'package:scrollable_bottomsheet_batepicker/scrollable_bottomsheet_batepicker.dart';
 import 'package:intl/intl.dart';
 import "package:jiffy/jiffy.dart";
 
