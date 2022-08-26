@@ -6,7 +6,7 @@ import 'package:intl/intl.dart';
 
 
 import 'package:jiffy/jiffy.dart';
-import 'package:scrollable_bottomsheet_batepicker/scrollable_bottomsheet_batepicker.dart';
+import 'package:scrollable_bottomsheet_datepicker/scrollable_bottomsheet_datepicker.dart';
 
 class CalendarHeader extends StatefulWidget {
   final dynamic locale;
@@ -22,6 +22,8 @@ class CalendarHeader extends StatefulWidget {
   final DayBuilder? headerTitleBuilder;
   final double leftchevronsize;
   final double rightchevronsize;
+  final Image? LeftIcon;
+  final Image? RightIcon;
   const CalendarHeader({
     Key? key,
     this.locale,
@@ -36,7 +38,7 @@ class CalendarHeader extends StatefulWidget {
     required this.availableCalendarFormats,
     this.headerTitleBuilder,
     required this.leftchevronsize,
-    required this.rightchevronsize,
+    required this.rightchevronsize, required this.LeftIcon, required this.RightIcon,
   }) : super(key: key);
 
   @override
@@ -59,7 +61,7 @@ class _CalendarHeaderState extends State<CalendarHeader> {
 
     return Container(
       decoration: widget.headerStyle.decoration,
-      margin:  EdgeInsets.only(top: 10),
+      // margin:  EdgeInsets.only(top: 10),
       padding: widget.headerStyle.headerPadding,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -101,14 +103,12 @@ class _CalendarHeaderState extends State<CalendarHeader> {
           splashRadius: 20,
           iconSize: 4,
          icon: SizedBox(
-            height: 10,
-            width: 5,
+            height: 15,
+            width: 6,
             child: Container(
              height: 8,
              width: 4.3,
-           child: Image(
-                   image: AssetImage("assets/left_chevron.png"),
-                ),
+           child: widget.LeftIcon,
                ),
           ),
         ),
@@ -122,15 +122,13 @@ class _CalendarHeaderState extends State<CalendarHeader> {
             splashRadius: 20,
             iconSize: 4,
             icon: SizedBox(
-              height: 10,
-              width: 5,
+              height: 15,
+              width: 6,
               child: Container(
-                    height: 8,
-                    width: 4.3,
+                    height: 15,
+                    width: 6,
                     // margin: const EdgeInsets.only(right: 16 ),
-                    child: Image(
-                  image: AssetImage("assets/right_chevron.png"),
-                 ),
+                    child: widget.RightIcon,
               ),
             ),
           ),],),),

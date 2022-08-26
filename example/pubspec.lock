@@ -123,13 +123,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
-  scrollable_bottomsheet_batepicker:
+  scrollable_bottomsheet_datepicker:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.0.5"
+    version: "0.0.6"
   simple_gesture_detector:
     dependency: transitive
     description:

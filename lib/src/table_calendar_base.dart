@@ -182,7 +182,7 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
     return LayoutBuilder(
       builder: (context, constraints) {
         return Container(
-          margin: const EdgeInsets.only(left:21,right: 23),
+          margin: const EdgeInsets.only(left:10,right: 10),
           child: SimpleGestureDetector(
             onVerticalSwipe: null,
             swipeConfig: widget.simpleSwipeConfig,

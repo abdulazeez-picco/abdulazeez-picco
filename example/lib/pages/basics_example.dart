@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scrollable_bottomsheet_batepicker/scrollable_bottomsheet_batepicker.dart';
+import 'package:scrollable_bottomsheet_datepicker/scrollable_bottomsheet_datepicker.dart';
 import 'package:intl/intl.dart';
 import "package:jiffy/jiffy.dart";
 
@@ -24,6 +24,11 @@ class _BasicCalenderState extends State<BasicCalender> {
           title: Text('TableCalendar - Basics'),
         ),
         body: TableCalendar(
+          LeftIcon: Image(image: AssetImage("assets/left_chevron.png")),
+          RightIcon: Image(
+                  image: AssetImage("assets/right_chevron.png"),
+                 ),
+
           firstDay: DateTime.utc(2000, 01, 01),
           lastDay: DateTime.utc(2100, 01, 01),
           focusedDay: _focusedDay,

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:simple_gesture_detector/simple_gesture_detector.dart';
 import 'package:adaptive_date_picker/adaptive_date_picker.dart';
-import 'package:scrollable_bottomsheet_batepicker/scrollable_bottomsheet_batepicker.dart';
+import 'package:scrollable_bottomsheet_datepicker/scrollable_bottomsheet_datepicker.dart';
 import 'widgets/calendar_header.dart';
 import 'widgets/cell_content.dart';
 import "package:jiffy/jiffy.dart";
@@ -201,7 +201,8 @@ class TableCalendar<T> extends StatefulWidget {
   final void Function(PageController pageController)? onCalendarCreated;
   final double leftchevronsize;
   final double rightchevronsize;
-
+  Image? LeftIcon;
+   Image? RightIcon;
   /// Creates a `TableCalendar` widget.
   TableCalendar({
     Key? key,
@@ -259,7 +260,7 @@ class TableCalendar<T> extends StatefulWidget {
     this.onFormatChanged,
     this.onCalendarCreated,
     required this.leftchevronsize,
-    required this.rightchevronsize,
+    required this.rightchevronsize,  this.LeftIcon,  this.RightIcon,
   })  : assert(availableCalendarFormats.keys.contains(calendarFormat)),
         assert(availableCalendarFormats.length <= CalendarFormat.values.length),
         assert(weekendDays.isNotEmpty
@@ -289,7 +290,15 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
   @override
   void initState() {
     super.initState();
-  
+    if(widget.LeftIcon==null){
+      widget.LeftIcon=Image(image: AssetImage("assets/left_chevron.png"));
+     
+    }
+    if(widget.RightIcon==null){
+       widget.RightIcon=Image(
+                  image: AssetImage("assets/right_chevron.png"),
+                 );
+    }
     final initialPage = _calculateFocusedPage(
         widget.calendarFormat, widget.firstDay, widget.focusedDay);
       _previousIndex=initialPage;
@@ -694,6 +703,8 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
             valueListenable: _focusedDay!,
             builder: (context, value, _) {
               return CalendarHeader(
+                LeftIcon: widget.LeftIcon,
+                RightIcon: widget.RightIcon,
                 headerTitleBuilder: widget.calendarBuilders.headerTitleBuilder,
                 focusedMonth: value,
                 onLeftChevronTap: _onLeftChevronTap,
@@ -727,8 +738,7 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
                     }
                   }
                   _showCustomPicker();
-
-                  widget.onHeaderTapped?.call(_focusedDay!.value);
+                  // widget.onHeaderTapped?.call(_focusedDay!.value);
                   DValue[0]["Month"] =
                       Jiffy(value, "yyyy-mm-dd mm:hh:ssZ").format("MMMM");
                   DValue[0]["Year"] = Jiffy(value, "yyyy-mm-dd mm:hh:ssZ")
