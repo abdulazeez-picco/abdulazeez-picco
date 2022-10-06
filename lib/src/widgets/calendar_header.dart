@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jiffy/jiffy.dart';
-import '../../scrollable_bottomsheet_datepicker.dart';
+import '../../horizontal_calendar_and_datepicker.dart';
 
 class CalendarHeader extends StatefulWidget {
   final dynamic locale;

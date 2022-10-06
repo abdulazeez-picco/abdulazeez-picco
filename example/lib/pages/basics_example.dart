@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:horizontal_calendar_and_datepicker/scrollable_bottomsheet_datepicker.dart';
+import 'package:horizontal_calendar_and_datepicker/horizontal_calendar_and_datepicker.dart';
 import 'package:intl/intl.dart';
 import "package:jiffy/jiffy.dart";
 
