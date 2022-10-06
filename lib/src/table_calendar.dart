@@ -1,11 +1,11 @@
-// ignore_for_file: unused_field, unused_local_variable, unnecessary_null_comparison
+// ignore_for_file: unused_field, unused_local_variable, unnecessary_null_comparison, must_be_immutable, non_constant_identifier_names
 
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:simple_gesture_detector/simple_gesture_detector.dart';
 import 'package:adaptive_date_picker/adaptive_date_picker.dart';
-import 'package:scrollable_bottomsheet_datepicker/scrollable_bottomsheet_datepicker.dart';
+import '../scrollable_bottomsheet_datepicker.dart';
 import 'widgets/calendar_header.dart';
 import 'widgets/cell_content.dart';
 import "package:jiffy/jiffy.dart";
@@ -203,6 +203,7 @@ class TableCalendar<T> extends StatefulWidget {
   final double rightchevronsize;
   Image? LeftIcon;
    Image? RightIcon;
+   final bool? isfuturedaydisable;
   /// Creates a `TableCalendar` widget.
   TableCalendar({
     Key? key,
@@ -220,6 +221,7 @@ class TableCalendar<T> extends StatefulWidget {
       CalendarFormat.twoWeeks: '2 weeks',
       CalendarFormat.week: 'Week',
     },
+    this.isfuturedaydisable=false,
     this.headerVisible = true,
     this.daysOfWeekVisible = true,
     this.pageJumpingEnabled = false,
@@ -260,7 +262,7 @@ class TableCalendar<T> extends StatefulWidget {
     this.onFormatChanged,
     this.onCalendarCreated,
     required this.leftchevronsize,
-    required this.rightchevronsize,  this.LeftIcon,  this.RightIcon,
+    required this.rightchevronsize,  this.LeftIcon,  this.RightIcon
   })  : assert(availableCalendarFormats.keys.contains(calendarFormat)),
         assert(availableCalendarFormats.length <= CalendarFormat.values.length),
         assert(weekendDays.isNotEmpty
@@ -845,9 +847,18 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
             dayBuilder: (context, day, focusedMonth) {
               return GestureDetector(
                 behavior: widget.dayHitTestBehavior,
-                onTap: () => _onDayTapped(day),
+                onTap: ()  {
+                  if(widget.isfuturedaydisable==true){
+                    if(day.isBefore(DateTime.now())){
+                      _onDayTapped(day);
+                    }
+                  }
+                  else{
+                    _onDayTapped(day);
+                  }
+                },
                 onLongPress: () => _onDayLongPressed(day),
-                child: _buildCell(day, focusedMonth),
+                child: _buildCell(day, focusedMonth,widget.isfuturedaydisable),
               );
             },
           ),
@@ -856,7 +867,7 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
     );
   }
 
-  Widget _buildCell(DateTime day, DateTime focusedDay) {
+  Widget _buildCell(DateTime day, DateTime focusedDay, value) {
     final isOutside = day.month != focusedDay.month;
 
     if (isOutside && _shouldBlockOutsideDays) {
@@ -907,6 +918,7 @@ class _TableCalendarState<T> extends State<TableCalendar<T>> {
         final isWeekend = _isWeekend(day, weekendDays: widget.weekendDays);
 
         Widget content = CellContent(
+          isfuturedaydisable:widget.isfuturedaydisable,
           key: ValueKey('CellContent-${day.year}-${day.month}-${day.day}'),
           day: day,
           focusedDay: focusedDay,

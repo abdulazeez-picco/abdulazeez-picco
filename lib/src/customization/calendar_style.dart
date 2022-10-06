@@ -202,7 +202,7 @@ class CalendarStyle {
     this.outsideTextStyle = const TextStyle(color: const Color(0xFFAEAEAE)),
     this.outsideDecoration = const BoxDecoration(shape: BoxShape.circle,color: Color(0xfff4f8f6)),
     this.disabledTextStyle = const TextStyle(
-      color: const Color(0xff555555), fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500
+      color: Color.fromARGB(255, 116, 112, 112), fontSize: 14.0, fontFamily: "Gordita"
       ),
     this.disabledDecoration = const BoxDecoration(shape: BoxShape.circle,color:Color(0xfff4f8f6)),
     this.holidayTextStyle = const TextStyle(color: const Color(0xFF5C6BC0)),

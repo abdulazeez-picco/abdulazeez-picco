@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scrollable_bottomsheet_datepicker/scrollable_bottomsheet_datepicker.dart';
+import 'package:horizontal_calendar_and_datepicker/scrollable_bottomsheet_datepicker.dart';
 import 'package:intl/intl.dart';
 import "package:jiffy/jiffy.dart";
 
@@ -35,6 +35,7 @@ class _BasicCalenderState extends State<BasicCalender> {
           calendarFormat: _calendarFormat,
           leftchevronsize: 12,
           rightchevronsize: 12,
+          isfuturedaydisable:true,
           calendarStyle: CalendarStyle(
               defaultTextStyle:
                   TextStyle(color: Color(0xff555555), fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500),
@@ -60,15 +61,14 @@ class _BasicCalenderState extends State<BasicCalender> {
             return isSameDay(_selectedDay, day);
           },
           onDaySelected: (selectedDay, focusedDay) {
-            
-            if (!isSameDay(_selectedDay, selectedDay)) {
-              setState(() {
+              
+                 setState(() {
                 _selectedDay = selectedDay;
                 _focusedDay = focusedDay;
                 doff = false;
               });
               
-            }
+           
           },
           daysOfWeekStyle: DaysOfWeekStyle(
               weekendStyle:

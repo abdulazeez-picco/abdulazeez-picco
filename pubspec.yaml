@@ -1,6 +1,6 @@
-name: scrollable_bottomsheet_datepicker
-description: Combined Datepicker of horizontal datepicker calendar and bottomsheet date picker.
-version: 0.0.6
+name: horizontal_calendar_and_datepicker
+description: Built with Horizontal datepicker and vertical Month/Year picker Hope you guys love it !!! .
+version: 0.0.1
 homepage: https://github.com/karthick-picco/Scrollable_Bottomsheet_Date_Picker
 
 environment:
