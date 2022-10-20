@@ -3,5 +3,4 @@
 
 **Android**
 :--:|:--:
-<img src="assets/datepicker1.jpg" alt="Horizontal Date Picker with future day enable and disable"/>|
-<img src="assets/datepicker2.jpg" alt="A vertical bottomsheet month and year picker"/>
+<img src="https://prnt.sc/TDY-JXobMi7F" alt="Horizontal Date Picker with future day enable and disable"/>|<img src="https://prnt.sc/7uvR_EumHrbu" alt="A vertical bottomsheet month and year picker"/>
