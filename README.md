@@ -1,5 +1,5 @@
 # horizontal_calendar_and_datepicker
-  Built with Horizontal datepicker and vertical Month/Year picker Hope you guys love it !!!. if you guys are suffering from creating a calendar which has horizontal dates and vertical year/month this datepicker will be very useful for you guys.
+  Built with Horizontal datepicker and vertical Month/Year picker Hope you guys love it !!!. if you guys are suffering from creating a calendar which has horizontal dates and vertical year/month this datepicker will be very useful for you guys...
 
 **Android**
 :--:|:--:
