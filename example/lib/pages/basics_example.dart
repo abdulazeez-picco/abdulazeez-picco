@@ -26,27 +26,34 @@ class _BasicCalenderState extends State<BasicCalender> {
         body: TableCalendar(
           LeftIcon: Image(image: AssetImage("assets/left_chevron.png")),
           RightIcon: Image(
-                  image: AssetImage("assets/right_chevron.png"),
-                 ),
-
+            image: AssetImage("assets/right_chevron.png"),
+          ),
           firstDay: DateTime.utc(2000, 01, 01),
           lastDay: DateTime.utc(2100, 01, 01),
           focusedDay: _focusedDay,
           calendarFormat: _calendarFormat,
           leftchevronsize: 12,
           rightchevronsize: 12,
-          isfuturedaydisable:true,
+          isfuturedaydisable: false,
           calendarStyle: CalendarStyle(
-              defaultTextStyle:
-                  TextStyle(color: Color(0xff555555), fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500),
+              defaultTextStyle: TextStyle(
+                  color: Color(0xff555555),
+                  fontSize: 14.0,
+                  fontFamily: "Gordita",
+                  fontWeight: FontWeight.w500),
               // defaultTextStyle: TextStyle(color: Color(0xffa5a5a5)),
-              disabledTextStyle: const TextStyle(color: Color(0xff555555),fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500),
-              weekendTextStyle: TextStyle(color: Color(0xff555555),fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500),
+              disabledTextStyle: const TextStyle(
+                  color: Color(0xff555555),
+                  fontSize: 14.0,
+                  fontFamily: "Gordita",
+                  fontWeight: FontWeight.w500),
+              weekendTextStyle: TextStyle(
+                  color: Color(0xff555555),
+                  fontSize: 14.0,
+                  fontFamily: "Gordita",
+                  fontWeight: FontWeight.w500),
               selectedDecoration: BoxDecoration(
-                  
-                  color: Color(0xff007fbb), 
-                  shape: BoxShape.circle
-                  ),
+                  color: Color(0xff007fbb), shape: BoxShape.circle),
               isTodayHighlighted: doff,
               todayDecoration: BoxDecoration(
                   color: Color(0xff007fbb), shape: BoxShape.circle)),
@@ -61,14 +68,11 @@ class _BasicCalenderState extends State<BasicCalender> {
             return isSameDay(_selectedDay, day);
           },
           onDaySelected: (selectedDay, focusedDay) {
-              
-                 setState(() {
-                _selectedDay = selectedDay;
-                _focusedDay = focusedDay;
-                doff = false;
-              });
-              
-           
+            setState(() {
+              _selectedDay = selectedDay;
+              _focusedDay = focusedDay;
+              doff = false;
+            });
           },
           daysOfWeekStyle: DaysOfWeekStyle(
               weekendStyle:
@@ -79,7 +83,6 @@ class _BasicCalenderState extends State<BasicCalender> {
                 return "${(DateFormat('E').format(date).toUpperCase())}";
               })),
           onFormatChanged: (format) {
-            
             if (_calendarFormat != format) {
               setState(() {
                 _calendarFormat = format;
@@ -87,7 +90,6 @@ class _BasicCalenderState extends State<BasicCalender> {
             }
           },
           onHeaderTapped: (focusedDay) {
-          
             setState(() {
               DValue[0]["Month"] =
                   Jiffy(focusedDay, "yyyy-mm-dd mm:hh:ssZ").format("MMMM");

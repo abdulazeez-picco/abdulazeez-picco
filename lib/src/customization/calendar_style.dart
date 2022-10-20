@@ -168,31 +168,37 @@ class CalendarStyle {
       shape: BoxShape.circle,
     ),
     this.todayTextStyle = const TextStyle(
-      color: const Color(0xFFFAFAFA),
-      fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500
-    ), //
+        color: const Color(0xFFFAFAFA),
+        fontSize: 14.0,
+        fontFamily: "Gordita",
+        fontWeight: FontWeight.w500), //
     this.todayDecoration = const BoxDecoration(
       color: const Color(0xFF9FA8DA),
       shape: BoxShape.circle,
     ),
     this.selectedTextStyle = const TextStyle(
-        color: const Color(0xFFFAFAFA), fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500),
+        color: const Color(0xFFFAFAFA),
+        fontSize: 14.0,
+        fontFamily: "Gordita",
+        fontWeight: FontWeight.w500),
     this.selectedDecoration = const BoxDecoration(
       color: const Color(0xFF5C6BC0),
       shape: BoxShape.circle,
     ),
     this.rangeStartTextStyle = const TextStyle(
-      color: const Color(0xFFFAFAFA),
-      fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500
-    ),
+        color: const Color(0xFFFAFAFA),
+        fontSize: 14.0,
+        fontFamily: "Gordita",
+        fontWeight: FontWeight.w500),
     this.rangeStartDecoration = const BoxDecoration(
       color: const Color(0xFF6699FF),
       shape: BoxShape.circle,
     ),
     this.rangeEndTextStyle = const TextStyle(
-      color: const Color(0xFFFAFAFA),
-      fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500
-    ),
+        color: const Color(0xFFFAFAFA),
+        fontSize: 14.0,
+        fontFamily: "Gordita",
+        fontWeight: FontWeight.w500),
     this.rangeEndDecoration = const BoxDecoration(
       color: const Color(0xFF6699FF),
       shape: BoxShape.circle,
@@ -200,11 +206,14 @@ class CalendarStyle {
     this.withinRangeTextStyle = const TextStyle(),
     this.withinRangeDecoration = const BoxDecoration(shape: BoxShape.circle),
     this.outsideTextStyle = const TextStyle(color: const Color(0xFFAEAEAE)),
-    this.outsideDecoration = const BoxDecoration(shape: BoxShape.circle,color: Color(0xfff4f8f6)),
+    this.outsideDecoration =
+        const BoxDecoration(shape: BoxShape.circle, color: Color(0xfff4f8f6)),
     this.disabledTextStyle = const TextStyle(
-      color: Color.fromARGB(255, 116, 112, 112), fontSize: 14.0, fontFamily: "Gordita"
-      ),
-    this.disabledDecoration = const BoxDecoration(shape: BoxShape.circle,color:Color(0xfff4f8f6)),
+        color: Color.fromARGB(255, 116, 112, 112),
+        fontSize: 14.0,
+        fontFamily: "Gordita"),
+    this.disabledDecoration =
+        const BoxDecoration(shape: BoxShape.circle, color: Color(0xfff4f8f6)),
     this.holidayTextStyle = const TextStyle(color: const Color(0xFF5C6BC0)),
     this.holidayDecoration = const BoxDecoration(
       border: const Border.fromBorderSide(
@@ -213,13 +222,18 @@ class CalendarStyle {
       shape: BoxShape.circle,
     ),
     this.weekendTextStyle = const TextStyle(
-      // color: const Color(0xFF5A5A5A)
-      ),
-    this.weekendDecoration = const BoxDecoration(shape: BoxShape.circle,color:Color(0xfff4f8f6)),
-    this.weekNumberTextStyle =
-        const TextStyle( fontSize: 14.0, fontFamily: "Gordita",fontWeight: FontWeight.w500, color: const Color(0xFFBFBFBF)),
+        // color: const Color(0xFF5A5A5A)
+        ),
+    this.weekendDecoration =
+        const BoxDecoration(shape: BoxShape.circle, color: Color(0xfff4f8f6)),
+    this.weekNumberTextStyle = const TextStyle(
+        fontSize: 14.0,
+        fontFamily: "Gordita",
+        fontWeight: FontWeight.w500,
+        color: const Color(0xFFBFBFBF)),
     this.defaultTextStyle = const TextStyle(),
-    this.defaultDecoration = const BoxDecoration(shape: BoxShape.circle,color:Color(0xfff4f8f6)),
+    this.defaultDecoration =
+        const BoxDecoration(shape: BoxShape.circle, color: Color(0xfff4f8f6)),
     this.rowDecoration = const BoxDecoration(),
     this.tableBorder = const TableBorder(),
   });

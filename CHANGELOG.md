@@ -1,2 +1,4 @@
 ## [0.0.1] - Initial release
     Initial release of horizontal and vertical date picker 
+## [0.0.2] - added some features and bug fixes
+    We can now enable/disable future dates from this release

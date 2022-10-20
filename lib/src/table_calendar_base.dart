@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:simple_gesture_detector/simple_gesture_detector.dart';
 
@@ -107,8 +106,8 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
   @override
   void didUpdateWidget(TableCalendarBase oldWidget) {
     super.didUpdateWidget(oldWidget);
-   
-    if (_focusedDay != widget.focusedDay || 
+
+    if (_focusedDay != widget.focusedDay ||
         widget.calendarFormat != oldWidget.calendarFormat ||
         widget.startingDayOfWeek != oldWidget.startingDayOfWeek) {
       final shouldAnimate = _focusedDay != widget.focusedDay;
@@ -144,7 +143,7 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
   void _updatePage({bool shouldAnimate = false}) {
     final currentIndex = _calculateFocusedPage(
         widget.calendarFormat, widget.firstDay, _focusedDay);
-     final endIndex = _calculateFocusedPage(
+    final endIndex = _calculateFocusedPage(
         widget.calendarFormat, widget.firstDay, widget.lastDay);
 
     if (currentIndex != _previousIndex ||
@@ -182,15 +181,16 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
     return LayoutBuilder(
       builder: (context, constraints) {
         return Container(
-          margin: const EdgeInsets.only(left:10,right: 10),
+          margin: const EdgeInsets.only(left: 10, right: 10),
           child: SimpleGestureDetector(
             onVerticalSwipe: null,
             swipeConfig: widget.simpleSwipeConfig,
             child: ValueListenableBuilder<double>(
               valueListenable: _pageHeight,
               builder: (context, value, child) {
-                final height =
-                    constraints.hasBoundedHeight ? constraints.maxHeight : value;
+                final height = constraints.hasBoundedHeight
+                    ? constraints.maxHeight
+                    : value;
 
                 return AnimatedSize(
                   duration: widget.formatAnimationDuration,
@@ -226,9 +226,7 @@ class _TableCalendarBaseState extends State<TableCalendarBase> {
                 onPageChanged: (index, focusedMonth) {
                   if (!_pageCallbackDisabled) {
                     if (!isSameDay(_focusedDay, focusedMonth)) {
-                     
                       _focusedDay = focusedMonth;
-                     
                     }
 
                     if (widget.calendarFormat == CalendarFormat.month &&

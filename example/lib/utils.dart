@@ -2,11 +2,6 @@ import 'dart:collection';
 
 import 'package:horizontal_calendar_and_datepicker/horizontal_calendar_and_datepicker.dart';
 
-
-
-
-
-
 /// Example event class.
 class Event {
   final String title;
