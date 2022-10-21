@@ -4,3 +4,6 @@
     We can now enable/disable future dates from this release
 ## [0.0.3] - added some features and bug fixes
     We can now enable/disable future dates from this release
+## [0.0.3+1] - added some features and bug fixes
+    Added some images for user view
+    
