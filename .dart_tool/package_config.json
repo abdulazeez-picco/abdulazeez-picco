@@ -3,153 +3,159 @@
   "packages": [
     {
       "name": "adaptive_date_picker",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/adaptive_date_picker-0.0.5",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/adaptive_date_picker-0.0.5",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "async",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.18"
     },
     {
       "name": "boolean_selector",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.17"
     },
     {
       "name": "characters",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.1",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/characters-1.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "clock",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.1",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/clock-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "collection",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.16.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/collection-1.17.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "fake_async",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.3.1",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "flutter",
-      "rootUri": "file:///home/picco/Downloads/flutter/packages/flutter",
+      "rootUri": "file:///Users/piccodev/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///home/picco/Downloads/flutter/packages/flutter_test",
+      "rootUri": "file:///Users/piccodev/flutter/packages/flutter_test",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.0"
     },
     {
       "name": "intl",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/intl-0.17.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "jiffy",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/jiffy-5.0.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/jiffy-5.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "matcher",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.12",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/matcher-0.12.16",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/material_color_utilities-0.1.5",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0",
       "packageUri": "lib/",
-      "languageVersion": "2.13"
+      "languageVersion": "2.17"
     },
     {
       "name": "meta",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.8.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/meta-1.9.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.2",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/path-1.8.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "plugin_platform_interface",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.2",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.6",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.19"
     },
     {
       "name": "simple_gesture_detector",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/simple_gesture_detector-0.2.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/simple_gesture_detector-0.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///home/picco/Downloads/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/piccodev/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "source_span",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.9.0",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/source_span-1.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "stack_trace",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/stack_trace-1.11.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "stream_channel",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/stream_channel-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
-      "name": "stack_trace",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "stream_channel",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/stream_channel-2.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "string_scanner",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.1",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/term_glyph-1.2.1",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/test_api-0.4.12",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/test_api-0.6.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.18"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///home/picco/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.2",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "web",
+      "rootUri": "file:///Users/piccodev/.pub-cache/hosted/pub.dev/web-0.1.4-beta",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
     },
     {
       "name": "horizontal_calendar_and_datepicker",
@@ -158,7 +164,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-10-21T07:49:25.973722Z",
+  "generated": "2023-09-27T10:51:39.634692Z",
   "generator": "pub",
-  "generatorVersion": "2.18.2"
+  "generatorVersion": "3.1.2"
 }
