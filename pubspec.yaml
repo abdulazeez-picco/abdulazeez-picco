@@ -11,9 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  intl: ^0.17.0
-  simple_gesture_detector: ^0.2.0
-  adaptive_date_picker: ^0.0.5
+  intl: 
+  simple_gesture_detector:
+  adaptive_date_picker: 
   jiffy: ^5.0.0
 dev_dependencies:
   flutter_test:
